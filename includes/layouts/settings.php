@@ -25,7 +25,7 @@ function wwup_layout(){
                             </tbody>
                         </table>
                         <p class="submit">
-                            <button type="submit" name="submit" id="submit" class="button button-primary"><?= __('Save option', 'wwup'); ?></button>
+                            <button type="submit" name="submit" id="submit-options" class="button button-primary"><?= __('Save option', 'wwup'); ?></button>
                         </p>
                     </form>
                 </div>
@@ -43,9 +43,16 @@ function wwup_layout(){
                             </textarea>
 
                             <p class="submit">
-                                <button type="submit" name="submit" id="submit" class="button button-primary" OnClientClick="tinyMCE.triggerSave(false,true)"><?= __('Save html', 'wwup'); ?></button>
+                                <button type="submit" name="submit" id="submit-cta" class="button button-primary" OnClientClick="tinyMCE.triggerSave(false,true)"><?= __('Save html', 'wwup'); ?></button>
                             </p>
                         </form>
+                        <script>
+                            tinymce.init({
+                                selector: 'textarea#call-to-action',
+                                plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+                                toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+                            });
+                        </script>
                     </div>    
                 <?php endif; ?>
             </div>

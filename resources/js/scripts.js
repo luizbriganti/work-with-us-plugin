@@ -1,10 +1,13 @@
 $ = jQuery
 
-window.save_form_options = (e, type) => {
+window.save_form_options = (e) => {
     e.preventDefault()
-    tinymce.triggerSave()
     formData = new FormData(e.currentTarget)
 
+    if(formData.has('type') && formData.get('type') == 'cta'){
+        tinymce.triggerSave()
+    }
+    
     $.ajax({
         type: 'post',
         url: wwup.ajaxurl,
@@ -12,7 +15,7 @@ window.save_form_options = (e, type) => {
         contentType: false,
         data: formData,
         beforeSend: () => {
-          $('#submit').prepend($('<i/>', {
+          $(`#submit${formData.get('type')}`).prepend($('<i/>', {
             class: 'mdi mdi-spin mdi-loading'
           }))
         },
@@ -23,6 +26,12 @@ window.save_form_options = (e, type) => {
               iconHtml: '<i class="mdi mdi-check"></i>',
               confirmButtonText: 'Ok',
               showCloseButton: true,
+          }).then(result => {
+            if(result.isConfirmed){
+                if(formData.has('type') && formData.get('type') == 'options'){
+                    return window.location.reload()
+                }
+            }
           })
         },
         error: error => {
@@ -36,17 +45,7 @@ window.save_form_options = (e, type) => {
           })
         },
         complete: () => {
-          $(`#submit i`).remove()
+            $(`#submit${formData.get('type')} i`).remove()
         }
     })
 }   
-
-$(document).ready(function(){
-    if(tinymce !== undefined){
-        tinymce.init({
-            selector: 'textarea#call-to-action',
-            plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
-            toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
-          });
-    }
-})

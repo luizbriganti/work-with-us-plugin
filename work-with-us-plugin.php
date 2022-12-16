@@ -37,9 +37,10 @@ function wwup_plugin_textdomain(){
 function admin_register_scripts(){
 	wp_enqueue_style('mdi', 'https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css');
     wp_enqueue_script( 'swal',  '//cdn.jsdelivr.net/npm/sweetalert2@11', array(), date('Ymd', time()), true );
-    if($tinyMCE = get_option('wwup_tiny_mce_api_key')):
+    //if($tinyMCE = get_option('wwup_tiny_mce_api_key')):
+        $tinyMCE = get_option('wwup_tiny_mce_api_key');
         wp_enqueue_script('tinyMCE', "//cdn.tiny.cloud/1/$tinyMCE/tinymce/6/tinymce.min.js", date('Ymd', time()), true);
-    endif;
+    //endif;
 	wp_enqueue_script( 'wwup_scripts',  plugins_url('resources/js/scripts.js', __FILE__), array(), date('Ymd', time()), true );
 
     wp_localize_script(
