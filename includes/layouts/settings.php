@@ -1,4 +1,7 @@
 <?php 
+/**
+ * Template della pagina Call To action  
+ */
 
 function wwup_layout(){
     $tinyMCE = get_option('wwup_tiny_mce_api_key');

@@ -1,5 +1,9 @@
 $ = jQuery
 
+/**
+ * La funzione per salvare il form, senza ricaricare la pagina.
+ */
+
 window.save_form_options = (e) => {
     e.preventDefault()
     formData = new FormData(e.currentTarget)

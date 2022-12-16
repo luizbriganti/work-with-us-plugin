@@ -59,20 +59,24 @@ add_action('admin_enqueue_scripts', 'admin_register_scripts');
  * Includes
  */
 
-require_once plugin_dir_path( __FILE__ ) . 'includes/layouts/settings.php';
-require_once plugin_dir_path( __FILE__ ) . 'includes/actions/forms.php';
-require_once plugin_dir_path( __FILE__ ) . 'includes/actions/hooks.php';
+require_once plugin_dir_path( __FILE__ ) . 'includes/layouts/settings.php'; // Visualizza l'editor testuale e il form per salvare la API key di TinyMCE
+require_once plugin_dir_path( __FILE__ ) . 'includes/actions/forms.php'; // Gestice l'inserimento dei dati nel database
+require_once plugin_dir_path( __FILE__ ) . 'includes/actions/hooks.php'; // Gestisce l'inserimento della call to action dopo il quarto paragrafo negli articoli di tag "governo"
+
+/**
+ * Register sub menu page
+ */
 
 function wwup_register_menu_page(){
     add_submenu_page(
         'options-general.php',
         __( 'Call to action', 'wwup' ),
         __('Call to action', 'wwup'),
-        'administrator',
+        'manage_options',
         'wwup-calltoaction',
         'wwup_layout',
         999
     );
 }
 
-add_action( 'admin_menu', 'wwup_register_menu_page');
+add_action( 'admin_menu', 'wwup_register_menu_page'); 
