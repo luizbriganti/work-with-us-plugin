@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Work With Us Plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-16 14:51+0000\n"
+"POT-Creation-Date: 2022-12-16 13:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -16,25 +16,15 @@ msgstr ""
 "X-Loco-Version: 2.6.3; wp-6.1.1\n"
 "X-Domain: wwup"
 
-#: includes/layouts/settings.php:14
+#: includes/layouts/settings.php:11
 msgid "Add TinyMCE key to show the editor"
 msgstr ""
 
-#: work-with-us-plugin.php:73 work-with-us-plugin.php:74
+#: work-with-us-plugin.php:69 work-with-us-plugin.php:70
 msgid "Call to action"
 msgstr ""
 
-#: includes/layouts/settings.php:36
-msgid "Call to action text editor"
-msgstr ""
-
-#: includes/layouts/settings.php:37
-msgid ""
-"Call to action will be shown after the fourth paragraph in the posts tagged "
-"\"governo\"."
-msgstr ""
-
-#: includes/layouts/settings.php:23
+#: includes/layouts/settings.php:20
 msgid "Copy/paste your TinyMCE Key"
 msgstr ""
 
@@ -46,7 +36,7 @@ msgstr ""
 msgid "Nice try"
 msgstr ""
 
-#: includes/actions/forms.php:39
+#: includes/actions/forms.php:27
 msgid "Option updated successfully"
 msgstr ""
 
@@ -54,19 +44,19 @@ msgstr ""
 msgid "Plugin di test per valutazione collaborazione con Il Post"
 msgstr ""
 
-#: includes/layouts/settings.php:51
+#: includes/layouts/settings.php:46
 msgid "Save html"
 msgstr ""
 
-#: includes/layouts/settings.php:31
+#: includes/layouts/settings.php:28
 msgid "Save option"
 msgstr ""
 
-#: includes/actions/forms.php:41
+#: includes/actions/forms.php:29
 msgid "Something went wrong. Please retry or contact a system administrator."
 msgstr ""
 
-#: includes/actions/forms.php:17
+#: includes/actions/forms.php:11
 msgid "Validation error."
 msgstr ""
 
@@ -74,6 +64,6 @@ msgstr ""
 msgid "Work With Us Plugin"
 msgstr ""
 
-#: includes/layouts/settings.php:13
+#: includes/layouts/settings.php:10
 msgid "Work with us settings"
 msgstr ""

@@ -33,6 +33,8 @@ function wwup_layout(){
                     </form>
                 </div>
                 <?php if($tinyMCE): ?>
+                    <h1><?= __('Call to action text editor', 'wwup'); ?></h1>
+                    <p><?= __('Call to action will be shown after the fourth paragraph in the posts tagged "governo".', 'wwup'); ?></p>
                     <div class="wrap">
                         <form onsubmit="save_form_options(event)" id="save_cta">
                             <input type="hidden" id="wwup_save_cta_nonce" value="<?= wp_create_nonce('wwup_save_cta_nonce'); ?>" name="wwup_save_cta_nonce" />
