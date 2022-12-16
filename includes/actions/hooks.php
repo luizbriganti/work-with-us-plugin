@@ -19,7 +19,7 @@ function wwup_call_to_action( $content ){
 
             if($cta && isset($blocks[3])): // verifico se esiste il quarto paragrafo
                 $p = $blocks[3]['innerHTML'];
-                $pFinal = str_replace('</p>', "</p>$cta", $p); // appendo la call to action al quarto paragrafo
+                $pFinal = str_replace('</p>', '</p>'.str_replace('\"', '', $cta), $p); // appendo la call to action al quarto paragrafo
                 $content = str_replace($p, $pFinal, $content); 
             endif;
         endif;
