@@ -1,0 +1,70 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Work With Us Plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-16 13:51+0000\n"
+"PO-Revision-Date: 2022-12-16 13:52+0000\n"
+"Last-Translator: \n"
+"Language-Team: Italiano\n"
+"Language: it_IT\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.3; wp-6.1.1\n"
+"X-Domain: wwup"
+
+#: includes/layouts/settings.php:11
+msgid "Add TinyMCE key to show the editor"
+msgstr "Aggiungi una chiave API di TinyMCE per mostrare l'editor"
+
+#: work-with-us-plugin.php:69 work-with-us-plugin.php:70
+msgid "Call to action"
+msgstr "Call to action"
+
+#: includes/layouts/settings.php:20
+msgid "Copy/paste your TinyMCE Key"
+msgstr "Copia/incolla la tua chiave API TinyMCE"
+
+#. Author of the plugin
+msgid "Luigi Briganti, Il Post"
+msgstr "Luigi Briganti, Il Post"
+
+#: work-with-us-plugin.php:21
+msgid "Nice try"
+msgstr "Bel tentativo"
+
+#: includes/actions/forms.php:27
+msgid "Option updated successfully"
+msgstr "Opzione aggiornata con successo"
+
+#. Description of the plugin
+msgid "Plugin di test per valutazione collaborazione con Il Post"
+msgstr ""
+
+#: includes/layouts/settings.php:28
+msgid "Save edit"
+msgstr "Salva modifica"
+
+#: includes/layouts/settings.php:46
+msgid "Save html"
+msgstr "Salva html"
+
+#: includes/actions/forms.php:29
+msgid "Something went wrong. Please retry or contact a system administrator."
+msgstr ""
+"Qualcosa è andato storto. Per favore riprova o contatta un amministratore di "
+"sistema."
+
+#: includes/actions/forms.php:11
+msgid "Validation error."
+msgstr "Errore di validazione."
+
+#. Name of the plugin
+msgid "Work With Us Plugin"
+msgstr "Work With Us Plugin"
+
+#: includes/layouts/settings.php:10
+msgid "Work with us settings"
+msgstr "Impostazioni Work With Us"
