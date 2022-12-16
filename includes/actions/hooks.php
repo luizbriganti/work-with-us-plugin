@@ -11,7 +11,7 @@ function wwup_call_to_action( $content ){
 		global $post;
 
         if(has_tag('governo', $post)): // verifico se è taggato governo
-            $blocks = array_values(array_filter(parse_blocks($content), function($block){
+            $blocks = array_values(array_filter(parse_blocks($content), function($block){ // recupero i blocchi di tipo paragrafo dal contenuto del post
                 return $block['blockName'] == 'core/paragraph';
             }));
 
